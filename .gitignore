@@ -1,0 +1,4 @@
+backend/venv
+/demo.py
+__pycache__/
+*.pyc
