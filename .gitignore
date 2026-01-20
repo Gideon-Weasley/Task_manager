@@ -2,3 +2,5 @@ backend/venv
 /demo.py
 __pycache__/
 *.pyc
+tasks.txt
+.env

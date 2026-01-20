@@ -1,0 +1,14 @@
+Tasks (task_is int serial not null primary key),(title string),(status string default-incomplete),(day string not null),(priority int default 1 (1-low 2- medium 3- high))
+clear_data (id serial not null primary key),(day_cleared timestamp not null)
+
+CREATE TABLE tasks (
+    task_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    status INTEGER DEFAULT 0,
+    task_date DATE DEFAULT CURRENT_DATE,
+    priority INTEGER DEFAULT 1,
+    reminder_at TIMESTAMP,
+    archived INTEGER DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    completed_at TIMESTAMP
+);
